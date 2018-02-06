@@ -1,20 +1,25 @@
 <?php
+/**
+LARAVEL中强大的路由
+HTTP方法:
+	1、路由方法
+		1、Route::get($uri,$callback);
+		2、Route::post($uri,$callback);
+		3、Route::put($uri,$callback);
+		4、Route::patch($uri,$callback);
+		5、Route::delete($uri,$callback);
+		6、Route::options($uri,$callback);
+	2、路由参数
+	Route::get('user/{$id}',function($id){
+		return 'user'.$id;
+	})
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+/**
+实例说明：
+*/
 /*
 Route::get('/','[控制器]@[行为]');
 例子：
