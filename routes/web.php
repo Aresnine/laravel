@@ -16,4 +16,3 @@ Route::get('/posts/{post}/edit','\App\Http\Controllers\PostController@edit');
 Route::put('/posts/{post}','\App\Http\Controllers\PostController@update');
 //删除文章
 Route::get('/posts/delete','\App\Http\Controllers\PostController@delete');
-这只是一个说明的测试
